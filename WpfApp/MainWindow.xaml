@@ -1,0 +1,16 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="327.6" Width="429.2">
+    <Grid>
+        <Button Command="{Binding SetTitleCommand}"  Content="Button1" HorizontalAlignment="Left" Margin="128,161,0,0" VerticalAlignment="Top" Width="158" Height="48"/>
+        <Button Command="{Binding SetNameCommand}"  Content="Button2" HorizontalAlignment="Left" Margin="128,214,0,0" VerticalAlignment="Top" Width="158" Height="48"/>
+        <Label Content="{Binding Title}" FontSize="26" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top" Height="50" Width="402"/>
+
+    </Grid>
+</Window>
